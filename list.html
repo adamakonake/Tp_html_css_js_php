@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/list.js" defer ></script>
+    <title>List Appernent</title>
+</head>
+<body>
+    <header>
+        <!--La bar de navigation-->
+        <nav class="navBar">
+            <div class="logoDiv">
+                <!--La photo de profil-->
+                <img class="logoSite" src="images/logo_odk.png" width="39.11" height="36" alt="logo_odk">
+                <strong class="titreOrange">Orange<br><span class="titreNoir">Digital Kalanso</span></strong>
+            </div>
+            <!--Bouton se connecter-->
+            <input class="btnConnecter" type="button" value="Se connecter">
+        </nav>
+    </header>
+    <main>
+        <section>
+            <header style="display: flex;justify-content: space-between;">
+                <h1 class="titreList">Liste des apprenants</h1>
+                <select id="promo">
+                    <option value="all">Tout</option>
+                    <option value="P1">Promotion 1</option>
+                    <option value="P2">Promotion 2</option>
+                    <option value="P3">Promotion 3</option>
+                </select>
+            </header>
+            <div class="line">
+                <div class="cercle"></div>
+            </div>
+            <div id="list">
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

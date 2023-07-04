@@ -1,0 +1,105 @@
+/* Debut en-tête */
+/* Bar de navigation */
+.navBar{
+    width: 100%;
+    height: 76px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo texte */
+.logoDiv{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 61px;
+}
+.titreOrange{
+    font-size: 16px;
+    color: orange;
+}
+.titreNoir{
+    color: black;
+}
+/* Bouton se connecter */
+.btnConnecter{
+    width: 110px;
+    height: 36px;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 61px;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(225, 165, 0, 0.25);
+    }
+}
+/* Fin en-tête*/
+.titreList{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 100px;
+}
+.line{
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.cercle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    top: -5px;
+}
+
+#list{
+    width: 90%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#list div{
+    border-radius: 10px;
+    height: fit-content;
+    border-top: 2px solid black;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(225, 165, 0, 0.5);
+        border: none;
+    }
+}
+#list img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#list p{
+    font-size: 15px;
+    text-align: center;
+}
+#promo {
+    border: none;
+    height: fit-content;
+    font-size: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 61px;
+}
+#promo option {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    margin: 15px;
+}

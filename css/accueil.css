@@ -1,0 +1,112 @@
+/* Debut en-tête */
+/* Bar de navigation */
+.navBar{
+    width: 100%;
+    height: 76px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo texte */
+.logoDiv{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 61px;
+}
+.titreOrange{
+    font-size: 16px;
+    color: orange;
+}
+.titreNoir{
+    color: black;
+}
+/* Bouton se connecter */
+.btnConnecter{
+    width: 110px;
+    height: 36px;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 61px;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(225, 165, 0, 0.25);
+    }
+}
+/* Fin en-tête*/
+/* Debut main */
+.bienvenue{
+    display: flex;
+    justify-content: space-between;
+}
+.text_accueil{
+   width: 50%;
+}
+.img_accueil{
+    width: 50%;
+}
+.photoAcc{
+    width: 100%;
+    height: auto;
+}
+.textBienv{
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.textBienv span{
+    color: black;
+}
+.textSlogan{
+    font-size: 24px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.textSlogan span{
+    font-family: 'Didact Gothic';
+}
+.buttonGroup{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.linkIn{
+    display: block;	
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid orange;
+    color: orange;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+	border-radius: 3px;
+    margin-right: 15px;
+    &:hover{
+        background-color: orange;
+        color: white;
+    }
+}
+.linkLi{
+    display: block;	
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid orange;
+    color: orange;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+	border-radius: 3px;
+    &:hover{
+        background-color: orange;
+        color: white;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscription.css">
+    <script src="js/inscription.js" defer ></script>
+    <title>Inscription</title>
+</head>
+<body>
+    <!--En-tête du site-->
+    <header>
+        <!--La bar de navigation-->
+        <nav class="navBar">
+            <div class="logoDiv">
+                <!--La photo de profil-->
+                <img class="logoSite" src="images/logo_odk.png" width="39.11" height="36" alt="logo_odk">
+                <strong class="titreOrange">Orange<br><span class="titreNoir">Digital Kalanso</span></strong>
+            </div>
+            <!--Bouton se connecter-->
+            <input class="btnConnecter" type="button" value="Se connecter">
+        </nav>
+    </header>
+    <main>
+        <section class="formSection">
+            <div class="formDiv">
+                <!--Formulaire d'inscription-->
+                <div style="display: flex;justify-content: flex-start;">
+                    <h1 class="insText">Inscription</h1>
+                    <span id="error"></span>
+                </div>
+                <form id="myForm" action="inscription.php" method="post" >
+
+                    <div class="formInputDiv">
+                        <div class="formGDiv">
+                            <div class="formGroupe">
+                                <label for="nom">Nom</label><br>
+                                <input id="nom" type="text" name="nom" value="" ><br>
+                                <span id="errorNom"></span>
+                            </div>
+                            <div class="formGroupe">
+                                <label for="prenom">Prenom</label><br>
+                                <input id="prenom" type="text" name="prenom" value="" ><br>
+                                <span id="errorPrenom"></span>
+                            </div>
+                        </div>
+                        <div class="formGDiv">
+                            <div class="formGroupe">
+                                <label for="age">Âge</label><br>
+                                <input id="age" type="number" name="age" value="" ><br>
+                                <span id="errorAge"></span>
+                            </div>
+                            <div class="formGroupe">
+                                <label for="dateNaissance">Date de naissance</label><br>
+                                <input id="dateNaissance" type="date" name="dateNaissance" value="" ><br>
+                                <span id="errorDateNaissance"></span>
+                            </div>
+                        </div>
+                        <div class="formGDiv">
+                            <div class="formGroupe">
+                                <label for="email">Email</label><br>
+                                <input id="email" type="email" name="email" value="" ><br>
+                                <span id="errorEmail"></span>
+                            </div>
+                            <div class="formGroupe">
+                                <label for="telephone">Telephone</label><br>
+                                <input id="telephone" type="text" name="telephone" value="" ><br>
+                                <span id="errorTelephone"></span>
+                            </div>
+                        </div>
+                        <div class="formGDiv">
+                            <div class="formGroupe">
+                                <label for="promotion">Promotion</label><br>
+                                <input id="promotion" type="text" name="promotion" value="" ><br>
+                                <span id="errorPromotion"></span>
+                            </div>
+                            <div class="formGroupe">
+                                <label for="anneeCerf">Année de certification</label><br>
+                                <input id="anneeCerf" type="number" name="anneeCerf" value="" ><br>
+                                <span id="errorAnneeCerf"></span>
+                            </div>
+                        </div>
+                        <input id="file" type="file" accept="image/*" name="image" enctype="multipart/form-data" style="display: none;">
+                    </div>
+
+                    <div class="btnDiv">
+                        <button id="btnPhoto" onclick="photoOnClick()" type="button">Photo</button>
+                        <button id="btnEnregister" onclick="enregistrerOnClick()" type="button">Enregister</button>
+                    </div>
+
+                </form>
+                <img id="photoProfil" src="images/logo_compte.png" alt="photo_profil" >
+            </div>
+            <img class="logoDesk" src="images/photo_desk.png" alt="logo_desk">
+        </section>
+    </main>
+</body>
+</html>

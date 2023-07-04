@@ -1,0 +1,183 @@
+/* Debut en-tête */
+/* Bar de navigation */
+.navBar{
+    width: 100%;
+    height: 76px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo texte */
+.logoDiv{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 61px;
+}
+.titreOrange{
+    font-size: 16px;
+    color: orange;
+}
+.titreNoir{
+    color: black;
+}
+/* Bouton se connecter */
+.btnConnecter{
+    width: 110px;
+    height: 36px;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 61px;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(225, 165, 0, 0.25);
+    }
+}
+/* Fin en-tête*/
+/* Debut main */
+/* Style du blog blanc, orange et photo de profile */
+.blogContainer{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.blogOrange{
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: orange; /*rgba(225, 165, 0, 1); */
+    
+}
+.odkDiv{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.odkDivText{
+    width: fit-content;
+    margin-top: auto;
+}
+/* le @ */
+.text{
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: end;
+}
+.odkText{
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+}
+#photoProfile{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    left: 15px;
+    z-index: 1;
+}
+.blogBlanc{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: white;
+}
+.divGroupe{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.btnGroupe{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.infoGroupe{
+    margin-top: auto;
+}
+.infoGroupe .tite{
+    font-size: 20px;
+}
+#btnAnnuler{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+#btnModifier{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+#btnSupprimer{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+/* Debut formulaire */
+.infTitle{
+    margin-left: 15px;
+    padding-top: 15px;
+    color: orange;
+}
+#myForm{
+    display: flex;
+    justify-content: space-between;
+}
+.formInputDiv{
+    width: 100%;
+}
+.formInputDiv input{
+    width: 95%;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgb(217, 217, 217,0.50);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    margin-bottom: 36px;
+    margin-top: 5px;
+}
+.formGDiv{
+    margin-left: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.formGroupe{
+    align-items: center;
+    width: 50%;
+}
