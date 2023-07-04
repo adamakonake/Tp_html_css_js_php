@@ -197,6 +197,7 @@ function verifInput(inputt,span){
 if(sessionStorage.getItem("currentApprenant") != null){
     apprenant = JSON.parse(sessionStorage.getItem("currentApprenant"));
     makeReadOnly();
+    document.getElementById('titlePage').innerHTML=apprenant[0].nom;
     document.getElementById('photoProfile').src="http://"+apprenant[0].photo;
     document.getElementById("titeName").innerHTML=apprenant[0].nom+" "+apprenant[0].prenom;
     document.getElementById("titeAdresse").innerHTML=apprenant[0].email;
@@ -221,6 +222,7 @@ if(sessionStorage.getItem("currentApprenant") != null){
         if(xnr.readyState === XMLHttpRequest.DONE && xnr.status == 200){
             apprenant = JSON.parse(xnr.responseText);
             makeReadOnly();
+            document.getElementById('titlePage').innerHTML=apprenant[0].nom;
             document.getElementById('photoProfile').src="http://"+apprenant[0].photo;
             document.getElementById("titeName").innerHTML=apprenant[0].nom+" "+apprenant[0].prenom;
             document.getElementById("titeAdresse").innerHTML=apprenant[0].email;
@@ -238,7 +240,6 @@ if(sessionStorage.getItem("currentApprenant") != null){
 
 }
 
-document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
 document.getElementById("btnAnnuler").addEventListener('click', e=>{
 
     makeReadOnly();
@@ -406,6 +407,7 @@ document.getElementById('btnSupprimer').addEventListener('click', e =>{
 //         document.getElementById(element).readOnly = false;
 //     });
 // }
+document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
 document.getElementById('photoProfile').addEventListener('click', e=> {
     if(document.getElementById('btnModifier').value == "ENREGISTRER"){
         document.getElementById('file').click();
