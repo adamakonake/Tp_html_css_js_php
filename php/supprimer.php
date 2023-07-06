@@ -1,6 +1,8 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && strpbrk($_SERVER['HTTP_REFERER'],"http://localhost/tpphp/detail.html?")) {
+
+    //echo $_SERVER['HTTP_REFERER'];
 
     //Dossier d'upload
     $dir='../upload/';

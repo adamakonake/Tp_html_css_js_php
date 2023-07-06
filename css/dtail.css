@@ -87,6 +87,10 @@
     border: 2px solid white;
     left: 15px;
     z-index: 1;
+    transition: all 1s;
+    &:hover{
+        width: 200px;;
+    }
 }
 .blogBlanc{
     position: relative;

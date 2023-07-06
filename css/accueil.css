@@ -54,7 +54,7 @@
     height: auto;
 }
 .textBienv{
-    font-size: 40px;
+    font-size: 47px;
     font-weight: bold;
     color: orange;
     margin-left: 20%;
@@ -85,16 +85,18 @@
     color: orange;
 	padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 	border-radius: 3px;
     margin-right: 15px;
+    font-size: 20px;
     &:hover{
         background-color: orange;
         color: white;
     }
 }
 .linkLi{
+    font-size: 20px;
     display: block;	
 	text-align: center;
 	text-decoration: none;
@@ -102,8 +104,8 @@
     color: orange;
 	padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 	border-radius: 3px;
     &:hover{
         background-color: orange;

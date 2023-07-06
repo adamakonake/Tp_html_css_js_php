@@ -199,6 +199,7 @@ if(sessionStorage.getItem("currentApprenant") != null){
     makeReadOnly();
     document.getElementById('titlePage').innerHTML=apprenant[0].nom;
     document.getElementById('photoProfile').src="http://"+apprenant[0].photo;
+    document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
     document.getElementById("titeName").innerHTML=apprenant[0].nom+" "+apprenant[0].prenom;
     document.getElementById("titeAdresse").innerHTML=apprenant[0].email;
     document.getElementById("titeMatricule").innerHTML=apprenant[0].matriculle;
@@ -224,6 +225,7 @@ if(sessionStorage.getItem("currentApprenant") != null){
             makeReadOnly();
             document.getElementById('titlePage').innerHTML=apprenant[0].nom;
             document.getElementById('photoProfile').src="http://"+apprenant[0].photo;
+            document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
             document.getElementById("titeName").innerHTML=apprenant[0].nom+" "+apprenant[0].prenom;
             document.getElementById("titeAdresse").innerHTML=apprenant[0].email;
             document.getElementById("titeMatricule").innerHTML=apprenant[0].matriculle;
@@ -244,6 +246,7 @@ document.getElementById("btnAnnuler").addEventListener('click', e=>{
 
     makeReadOnly();
     document.getElementById('photoProfile').src="http://"+apprenant[0].photo;
+    document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
     document.getElementById("titeName").innerHTML=apprenant[0].nom+" "+apprenant[0].prenom;
     document.getElementById("titeAdresse").innerHTML=apprenant[0].email;
     document.getElementById("titeMatricule").innerHTML=apprenant[0].matriculle;
@@ -407,7 +410,7 @@ document.getElementById('btnSupprimer').addEventListener('click', e =>{
 //         document.getElementById(element).readOnly = false;
 //     });
 // }
-document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
+
 document.getElementById('photoProfile').addEventListener('click', e=> {
     if(document.getElementById('btnModifier').value == "ENREGISTRER"){
         document.getElementById('file').click();
@@ -416,6 +419,7 @@ document.getElementById('photoProfile').addEventListener('click', e=> {
         const imag =  document.getElementById('photoProfile');
         reader.onload = e =>{
             imag.src = e.target.result;
+            document.getElementById('photoProfile').style="top : -"+document.getElementById('photoProfile').height/2+"px ;";
         }
         fileInput.addEventListener('change', e =>{
             const f=e.target.files[0];
