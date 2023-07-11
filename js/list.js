@@ -1,3 +1,20 @@
+// FadeIn du madal content du button nos contacts
+
+boutonConnecter = document.getElementById("btnConnecter");
+modal = document.getElementById("modal");
+
+boutonConnecter.onclick = function(){
+    modal.style.display = "block";
+}
+
+modal.onclick = function(event){
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+
+// Fin FadeIn du madal content du button nos contacts
+
 var apps;
 var allApp;
 var list = document.getElementById('list');
