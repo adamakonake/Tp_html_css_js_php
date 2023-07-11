@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
     <link rel="stylesheet" href="css/accueil.css">
+    <script src="js/accueil.js" defer></script>
     <title>Accueil</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <strong class="titreOrange">Orange<br><span class="titreNoir">Digital Kalanso</span></strong>
             </div>
             <!--Bouton se connecter-->
-            <input class="btnConnecter" type="button" value="Se connecter">
+            <input id="btnConnecter" type="button" value="Se connecter">
         </nav>
     </header>
     <main>
@@ -39,6 +40,13 @@
                 <img class="photoAcc" src="images/img_acc.png" alt="photo accueil">
             </div>
         </section>
+        <div id="modal">
+            <div id="modal-content">
+                <div id="losange"></div>
+                <p>Email : orangedigitalkalanso@kalanso.com</p>
+                <p>Tel : 77 - 77 - 77 - 77</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>

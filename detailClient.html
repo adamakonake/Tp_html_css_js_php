@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detailClient.css">
+    <script src="js/detail.js" defer></script>
+    <title id="titlePage">Document</title>
+</head>
+<body>
+    <header>
+        <!--La bar de navigation-->
+        <nav class="navBar">
+            <div class="logoDiv">
+                <!--La photo de profil-->
+                <a href="index.html"><img class="logoSite" src="images/logo_odk.png" width="39.11" height="36" alt="logo_odk"></a>
+                <strong class="titreOrange">Orange<br><span class="titreNoir">Digital Kalanso</span></strong>
+            </div>
+            <!--Bouton se connecter-->
+            <input class="btnConnecter" type="button" value="Se connecter">
+        </nav>
+    </header>
+    <main>
+        <section class="blogContainer">
+            <div class="blogOrange">
+                <div class="odkDiv">
+                    <div class="odkDivText">
+                        <h1 class="text">@</h1>
+                        <p class="odkText">ORANGE DIGITAL KALANSO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blogBlanc">
+                <img id="photoProfile" src="upload/adamakonake@gmail.com.jpg" alt="photo de profil">
+                <div class="divGroupe">
+                    <div class="infoGroupe">
+                        <p><span class="tite">NOM COMPLET : </span><span id="titeName"></span></p>
+                        <p><span class*="tite">ADRESSE MAIL : </span><span id="titeAdresse"></span></p>
+                        <p><span class="tite">MATRICULE : </span><span id="titeMatricule"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blogContainer">
+            <div style="display: flex;justify-content: flex-start;">
+                <h1 class="infTitle">Information complète</h1>
+                <span id="error"></span>
+            </div>
+            <form id="myForm">
+                <div class="formInputDiv">
+                    <div class="formGDiv">
+                        <div class="formGroupe">
+                            <label for="nom">Nom</label><br>
+                            <input id="nom" type="text" name="nom" value="" ><br>
+                            <span id="errorNom"></span>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="prenom">Prenom</label><br>
+                            <input id="prenom" type="text" name="prenom" value="" ><br>
+                            <span id="errorPrenom"></span>
+                        </div>
+                    </div>
+                    <div class="formGDiv">
+                        <div class="formGroupe">
+                            <label for="age">Âge</label><br>
+                            <input id="age" type="number" name="age" value="" ><br>
+                            <span id="errorAge"></span>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="dateNaissance">Date de naissance</label><br>
+                            <input id="dateNaissance" type="date" name="dateNaissance" value="" ><br>
+                            <span id="errorDateNaissance"></span>
+                        </div>
+                    </div>
+                    <div class="formGDiv">
+                        <div class="formGroupe">
+                            <label for="email">Email</label><br>
+                            <input id="email" type="email" name="email" value="" ><br>
+                            <span id="errorEmail"></span>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="telephone">Telephone</label><br>
+                            <input id="telephone" type="text" name="telephone" value="" ><br>
+                            <span id="errorTelephone"></span>
+                        </div>
+                    </div>
+                    <div class="formGDiv">
+                        <div class="formGroupe">
+                            <label for="promotion">Promotion</label><br>
+                            <input id="promotion" type="text" name="promotion" value="" ><br>
+                            <span id="errorPromotion"></span>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="anneeCerf">Année de certification</label><br>
+                            <input id="anneeCerf" type="number" name="anneeCerf" value="" ><br>
+                            <span id="errorAnneeCerf"></span>
+                        </div>
+                    </div>
+                    <input id="file" type="file" accept="image/*" name="image" enctype="multipart/form-data" style="display: none;">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

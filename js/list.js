@@ -11,22 +11,38 @@ xnr.onload = function(){
         console.log(apps);
         apps.forEach(element => {
             card = document.createElement('div');
+            card.className="card";
             //card.style="width: 20%;display: inline; border:1px solid green"
             image = document.createElement('img');
             //image.style="width: 100%;height: auto;"
             image.className="cardImg"
             image.src="http://"+element.photo;
             card.appendChild(image);
+            div = document.createElement('div');
+            div.className = "divNomOeil";
+            divOeil = document.createElement('div');
+            divOeil.className = "divOeil";
+            oeil = document.createElement('img');
+            oeil.className ="oeil";
+            oeil.src = "http://localhost/tpphp/images/oeil.png";
             titre = document.createElement('p');
-            titre.innerHTML=element.nom+" "+element.prenom;
             titre.className="cardTiltle";
-            card.appendChild(titre);
+            titre.innerHTML=element.nom+" "+element.prenom;
+            div.appendChild(titre);
+            divOeil.appendChild(oeil)
+            div.appendChild(divOeil);
+            card.appendChild(div);
             list.appendChild(card);
             var appr = element;
-            card.addEventListener('click', e =>{
+            image.addEventListener('click', e =>{
                 sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
                 console.log(appr.photo);
                 window.location.href="detail.html?id="+appr.id+"";
+            });
+            oeil.addEventListener('click', e =>{
+                sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
+                console.log(appr.photo);
+                window.location.href="detailClient.html?id="+appr.id+"";
             });
             
         });
@@ -40,38 +56,69 @@ document.getElementById('promo').addEventListener('change', e =>{
         if(el.promotion == e.target.value){
             console.log(e.target.value+"   "+el.promotion);
             card = document.createElement('div');
-            //card.style="width: 20%;display: inline; border:1px solid green"
+            card.className = "card";
             image = document.createElement('img');
-            //image.style="width: 100%;height: auto;"
             image.className="cardImg"
             image.src="http://"+el.photo;
             card.appendChild(image);
+            div = document.createElement('div');
+            div.className = "divNomOeil";
+            divOeil = document.createElement('div');
+            divOeil.className = "divOeil";
+            oeil = document.createElement('img');
+            oeil.className ="oeil";
+            oeil.src = "http://localhost/tpphp/images/oeil.png";
             titre = document.createElement('p');
-            titre.innerHTML=el.nom+" "+el.prenom;
             titre.className="cardTiltle";
-            card.appendChild(titre);
+            titre.innerHTML=el.nom+" "+el.prenom;
+            div.appendChild(titre);
+            divOeil.appendChild(oeil)
+            div.appendChild(divOeil);
+            card.appendChild(div);
             list.appendChild(card);
             var appr = el;
-            card.addEventListener('click', e =>{
-                sessionStorage.setItem("currentApprenant",appr);
+            image.addEventListener('click', e =>{
+                sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
+                console.log(appr.photo);
                 window.location.href="detail.html?id="+appr.id+"";
+            });
+            oeil.addEventListener('click', e =>{
+                sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
+                console.log(appr.photo);
+                window.location.href="detailClient.html?id="+appr.id+"";
             });
         }else if(e.target.value == "all"){
             card = document.createElement('div');
-            //card.style="width: 20%;display: inline; border:1px solid green"
+            card.className = "card";
             image = document.createElement('img');
-            //image.style="width: 100%;height: auto;"
             image.className="cardImg"
             image.src="http://"+el.photo;
             card.appendChild(image);
+            div = document.createElement('div');
+            div.className = "divNomOeil";
+            divOeil = document.createElement('div');
+            divOeil.className = "divOeil";
+            oeil = document.createElement('img');
+            oeil.className ="oeil";
+            oeil.src = "http://localhost/tpphp/images/oeil.png";
             titre = document.createElement('p');
-            titre.innerHTML=el.nom+" "+el.prenom;
             titre.className="cardTiltle";
-            card.appendChild(titre);
+            titre.innerHTML=el.nom+" "+el.prenom;
+            div.appendChild(titre);
+            divOeil.appendChild(oeil)
+            div.appendChild(divOeil);
+            card.appendChild(div);
             list.appendChild(card);
             var appr = el;
-            card.addEventListener('click', e =>{
-                console.log("Salut   "+el.nom);
+            image.addEventListener('click', e =>{
+                sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
+                console.log(appr.photo);
+                window.location.href="detail.html?id="+appr.id+"";
+            });
+            oeil.addEventListener('click', e =>{
+                sessionStorage.setItem("currentApprenant","["+JSON.stringify(appr)+"]");
+                console.log(appr.photo);
+                window.location.href="detailClient.html?id="+appr.id+"";
             });
         }
     });
